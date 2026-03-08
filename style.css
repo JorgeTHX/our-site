@@ -1,3 +1,27 @@
+.nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #ff8fb1;
+    padding: 12px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+.nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+
+
 /* ===== GLOBAL ===== */
 
 body {
