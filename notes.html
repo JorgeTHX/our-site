@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<title>Our Notes 💌</title>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="notes.js" defer></script>
+
+<style>
+
+body{
+    font-family: Arial;
+    text-align:center;
+    background:#fff0f5;
+}
+
+textarea{
+    width:60%;
+    height:120px;
+    padding:10px;
+    margin-top:10px;
+}
+
+input{
+    padding:10px;
+    width:200px;
+}
+
+button{
+    padding:10px 20px;
+    margin-top:10px;
+}
+
+.note{
+    background:white;
+    width:60%;
+    margin:20px auto;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Our Memory Notes 💌</h1>
+
+<input
+id="authorInput"
+placeholder="Your name"
+/>
+
+<br><br>
+
+<textarea
+id="noteInput"
+placeholder="Write a memory or a message..."
+></textarea>
+
+<br>
+
+<button onclick="addNote()">Add Note</button>
+
+<h2>All Notes</h2>
+
+<div id="notesContainer"></div>
+
+</body>
+</html>
